@@ -6,7 +6,7 @@ var nbIa = Math.floor(100*Math.random());
 
 console.log("nbIa = " + nbIa);
 
-var nbEssai = 1;
+var nbEssai = 0;
 
 
 function Tester(){
@@ -15,28 +15,23 @@ function Tester(){
 
   console.log("nbUser = " + rep.value + " / nbEssai = " + nbEssai++);
 
-  var diff = nbIa-rep.value;
+  var diff = Math.abs(nbIa-rep.value);
 
-  if (diff < -20) {
-    chaudfroid.innerHTML = "Froid";
-  }
-  else if (diff < -10) {
-    chaudfroid.innerHTML = "Tiède";
-  }
-  else if (diff < 0) {
-    chaudfroid.innerHTML = "Chaud";
-  }
-  else if (diff == 0){
-    chaudfroid.innerHTML = "Félicitation ! <br> Vous avez gagné au tour " + nbEssai + ".";
+  if (diff == 0){
+    chaudfroid.innerHTML = "Félicitations ! <br> Vous avez gagné au tour " + nbEssai + ".";
+    chaudfroid.style.color = "green";
   }
   else if (diff <= 10) {
     chaudfroid.innerHTML = "Chaud";
+    chaudfroid.style.color = "red";
   }
   else if (diff <= 20) {
     chaudfroid.innerHTML = "Tiède";
+    chaudfroid.style.color = "purple";
   }
   else {
     chaudfroid.innerHTML = "Froid";
+    chaudfroid.style.color = "blue";
   }
 
   console.log("Fin du script");
