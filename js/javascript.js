@@ -39,12 +39,11 @@ function Tester(){
   }
 
   if (nbEssai == 5) {
-    alert("Le nombre est comprit entre " + (nbIa-8) + " et " + (nbIa+11) + ".")
+    alert("Le nombre est compris entre " + (nbIa-8) + " et " + (nbIa+11) + ".")
   }
 
   if (diff != 0 && nbEssai ==10) {
     alert("Vous avez PERDU ! AH !! ");
-    console.log("Fin du script");
    location.reload();
   }
 }
