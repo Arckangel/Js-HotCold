@@ -1,0 +1,75 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+}
+
+@font-face {
+  font-family: LeyFont;
+  src: url(../font/LeyFont.ttf);
+}
+
+/* ---------Div de titre------------ */
+
+.titre{
+  height: 15%;
+  width: 100%;
+  background-color: grey;
+  position: absolute;
+  text-align: center;
+}
+
+h1{
+  margin-top: 30px;
+  font-family: LeyFont;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+/* ---------Div de gauche------------ */
+
+.jeu{
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  top: 15%;
+}
+
+.saisie{
+  width: 60%;
+  height: 100%;
+  float: left;
+  background-color: lightgrey;
+  text-align: justify;
+}
+
+#info{
+  padding: 50px;
+}
+
+#reponse{
+  margin-left: 35%;
+}
+
+#bouton{
+  margin-top: 45px;
+  margin-left: 45%;
+}
+
+/* ---------Div de droite------------ */
+
+.indication{
+  width: 40%;
+  height: 100%;
+  margin-left: 60%;
+  background-color: #A9AEAD;
+}
+
+#indicateur{
+  width: 250px;
+  margin: auto;
+  padding-top: 210px;
+  text-align: center;
+}

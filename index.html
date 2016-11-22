@@ -6,6 +6,28 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="titre"><h1>Jeu "Chaud-Froid"</h1></div>
+    <!-- Div titre -->
+
+    <div class="jeu">
+      <!-- Div Globale -->
+      <div class="saisie">
+        <!-- Div de gauche -->
+        <p id="info">
+          Le but de ce jeu est simple : L’ordinateur choisit un nombre entre 1 et 100, à vous de le trouver en proposant
+          à votre tour des nombres. Les seules indications données par l'ordinateur sont “chaud”, “tiède” et “froid”.
+        </p>
+        <br>
+        <input id="reponse" type="text" name="reponse">
+        <br>
+        <br>
+        <input id="bouton" onclick="Tester()" type="submit" name="bouton">
+      </div>
+
+      <div class="indication">
+        <!-- Div de droite -->
+          <p id="indicateur">Saisissez un nombre</p>
+    </div>
     <script src="js/javascript.js"></script>
   </body>
 </html>
